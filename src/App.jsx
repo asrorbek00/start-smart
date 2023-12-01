@@ -20,7 +20,7 @@ const App = () => {
     <>
     {error && <Error/>}
     {isPending && <Loading/>}
-    {!isPending && error && <div>
+    {!isPending && !error && <div>
       <Navbar/>
       <Heading/>
       <Services/>
